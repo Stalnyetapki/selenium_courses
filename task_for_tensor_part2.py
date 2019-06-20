@@ -20,8 +20,7 @@ first_page_link = driver.find_element_by_css_selector('div.cl-masonry__column:nt
 first_page_link.click()
 
 # Проверяем, что открылось изображение
-print(driver.current_url)
-print(images_url)
+
 assert driver.current_url != images_url
 try:
     driver.find_element_by_css_selector('[data-il="image__wrap"]')
